@@ -40,3 +40,6 @@ Paste:D://Новая папка/
 Archivate:D://Новая папка/Текстовый документ.txt
 
 Rename:D://Новая папка/Текстовый документ.txt
+
+<img src="https://sun9-68.userapi.com/impg/rFYQOYCZr21zcuNT9Lnf_e9Wl8R8ZV85kwB99g/eY71xyusPrk.jpg?size=803x480&quality=96&sign=b0cb8394f72ceb01c7d5027e4ec5940a&type=album" alt="не грузит">
+
