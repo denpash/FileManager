@@ -16,8 +16,8 @@ namespace manajer
     class Paste_Class
     {
         public void Pasting(Form1 frm, string patchcopy, string FilePath, string copyringfname)
-        {
-            if(frm.copyring == true)
+        {if (copyringfname != "") { 
+            if (frm.copyring == true)
             {
                 if (frm.copiedisfile == true)
                 {
@@ -46,11 +46,13 @@ namespace manajer
                     try
                     {
                         //Создать идентичное дерево каталогов
-                        foreach (string dirPath in Directory.GetDirectories(patchcopy + "/", "*", SearchOption.AllDirectories))
+                        foreach (string dirPath in Directory.GetDirectories(patchcopy, "*", SearchOption.AllDirectories))
                             Directory.CreateDirectory(dirPath.Replace(patchcopy, FilePath + "/" + copyringfname));
+                        Directory.CreateDirectory(FilePath + "/" + copyringfname + "/DebugFolderForDenPash");
                         foreach (string newPath in Directory.GetFiles(patchcopy + "/", "*.*", SearchOption.AllDirectories))
                             File.Copy(newPath, newPath.Replace(patchcopy + "/", FilePath + "/" + copyringfname + "/"), true);
-                        frm.LoadAllFilesAndDirrs();
+                       Directory.Delete(FilePath + "/" + copyringfname + "/DebugFolderForDenPash");
+                            frm.LoadAllFilesAndDirrs();
                     }
                     //}
 
@@ -114,7 +116,7 @@ namespace manajer
 
             }
         }
-       
+        }
 
 
 

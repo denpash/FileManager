@@ -20,16 +20,20 @@ namespace manajer
             if ((fileAtrr & FileAttributes.Directory) == FileAttributes.Directory)
             {
                 frm.copiedisfile = false;
-               
+                frm.patchcopy = frm.FilePatchTextBox.Text;
+                frm.copyringfname = CurentlySelectItemName;
+                frm.copyring = true;
 
 
             }
             else {
-                frm.copiedisfile = true; 
+                frm.copiedisfile = true;
+                frm.patchcopy = FilePath + "/" + CurentlySelectItemName;
+                frm.copyringfname = CurentlySelectItemName;
+                frm.copyring = true;
+
             }
-            frm.patchcopy = FilePath + "/" + CurentlySelectItemName;
-            frm.copyringfname = CurentlySelectItemName;
-            frm.copyring = true;
+            
            // frm.LoadAllFilesAndDirrs();
            // a = "11";
         }

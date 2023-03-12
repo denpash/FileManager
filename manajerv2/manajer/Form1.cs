@@ -107,7 +107,7 @@ namespace manajer
                         {
                             IsFile = true;
                         }
-                        FreeConsole();
+                       // FreeConsole();
                         CurentlySelectItemName = substr2.Substring(substr2.LastIndexOf("/"));
                         Delete_Class obj = new Delete_Class();
                         obj.Deleting(substr2, IsFile, FilePatchTextBox.Text, this);
@@ -267,7 +267,7 @@ namespace manajer
                         break;
                 }
                 System.Console.WriteLine("Конец Команды");
-                FreeConsole();
+              //  FreeConsole();
             }
             catch (Exception ae) {
                // System.Console.WriteLine("Конец Команды");
