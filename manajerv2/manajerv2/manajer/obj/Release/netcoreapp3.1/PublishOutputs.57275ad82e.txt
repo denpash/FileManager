@@ -1,0 +1,5 @@
+D:\manajer\manajer.exe
+D:\manajer\manajer.dll
+D:\manajer\manajer.deps.json
+D:\manajer\manajer.runtimeconfig.json
+D:\manajer\manajer.pdb
